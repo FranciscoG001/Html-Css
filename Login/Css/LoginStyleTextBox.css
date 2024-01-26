@@ -1,0 +1,61 @@
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2vh;
+  font-weight: bold;
+}
+
+.form__field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #775b5b;
+  outline: 0;
+  font-size: 1rem;
+  color: #775b5b;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #775b5b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #644131, #9587e4);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #644131;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=LoginStyleTextBox.css.map */
